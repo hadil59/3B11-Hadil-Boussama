@@ -1,0 +1,37 @@
+body { 
+    font-family: Tribuchet;
+	margin: 0px;
+    background-image: url("images (2).jpg");
+}
+header {
+	background-color:palevioletred;
+	color: white;
+	padding: 10px; 
+
+}
+
+footer {
+    background-color: #444;
+	color: white;
+	}
+	
+section{
+    background-color :rgb(241, 218, 189);
+    margin: 40px }
+
+.LienTitre {
+    color: red; 
+    text-decoration: none;
+}
+
+.LienTitre:visited {
+    color: beige; 
+}
+
+.LienTitre:hover {
+    color: pink; 
+}
+
+.LienTitre:active {
+    color: green; 
+}
