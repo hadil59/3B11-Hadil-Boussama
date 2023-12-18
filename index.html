@@ -53,17 +53,35 @@
 					<img src="img/contact-visual.png" >
 				</div>
 				<!-- Simple form setup: formspree.io -->
-				<form class="contact__form">
-					<input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
-					<input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
-					<textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
-					<input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
-				</form>
-			</div>
-		</section>
-		<!-- END SECTION: Contact -->
+				 <form class="contact__form" onsubmit="return validateForm()">
+      <input class="contact__form-el contact__form-el--name" type="text" id="name" placeholder="Your Name" spellcheck="false">
+      <input class="contact__form-el contact__form-el--email" type="email" id="email" placeholder="Your Email" spellcheck="false">
+      <textarea class="contact__form-el contact__form-el--message" id="message" placeholder="Your Message"></textarea>
+      <input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
+    </form>
+  </div>
+</section>
+
+<script>
+  function validateForm() {
+    
+    var nameValue = document.getElementById("name").value;
+    var emailValue = document.getElementById("email").value;
+    var messageValue = document.getElementById("message").value;
+
+
+    if (nameValue === "" || emailValue === "" || messageValue === "") {
+      alert("Veuillez remplir tous les champs !");
+      return false; 
+    } else {
+    
+      return true;
+    }
+  }
+</script>
 	</main>
-</section>	
+
+
 	<!-- SECTION: Footer -->
 	<footer class="footer">
 		<div class="footer__wrapper wrapper--large">

@@ -19,19 +19,20 @@ section{
     background-color :rgb(241, 218, 189);
     margin: 40px }
 
-.LienTitre {
-    color: red; 
-    text-decoration: none;
-}
 
-.LienTitre:visited {
-    color: beige; 
-}
-
-.LienTitre:hover {
-    color: pink; 
-}
-
-.LienTitre:active {
-    color: green; 
-}
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: purple;
+    }
+    
+    a:hover {
+        color: green;
+    }
+    
+    a:active {
+        color: red;
+    }
